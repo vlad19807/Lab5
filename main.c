@@ -1,4 +1,6 @@
 # include <stdio.h>
+# include <stdlib.h>
+#include <unistd.h>
 int main()
 {    
     int pid;
@@ -16,7 +18,7 @@ if(pid < 0)
 
         exit(-1);
     }
-    elseif(pid==0) 
+    else if(pid==0) 
     {
         /* Child Process */
 
